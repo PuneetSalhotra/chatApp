@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <!-- BOOTSTRAP v4 CDN links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="../socket.io/socket.io.js"></script>
+  <script  type="text/javascript" src="./script.js"></script>
+  <div class="container">
+  
+    <div class="my-3 jumbotron">
+      <h1 class="mb-3 display-4">Send Message</h1>
+      <input id="name" class="mb-3 form-control" placeholder="Name" />
+      <textarea id="message" class="mb-3 form-control" placeholder="Message"></textarea>
+      
+      <button type='button' class="btn btn-success" id="sendButton"  onclick="buttonClicked()">Send</button>
+      <div class="my-2 jumbotron" style="height : 200px; overflow:auto">
+        <ul class="list-group" id="userList">
+        
+        </ul>
+      </div>
+
+      <div class="chat-message">
+        <div id="feedback"> </div>
+      </div>
+    </div>
+    
+    <div id="messages" style="width: 100%; height: 300px; overflow:auto"></div>
+
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+  </div>
+</html>
